@@ -1,31 +1,27 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {img} from '../Images/Image 2@2x.png';
+import {NavLink} from 'react-router-dom';
+
+
 
 const Sidebar = props => {
+
     return(
         <div className="Sidebar-box">
-        <img src={img} alt="logo" width="158" height="66"></img>
+
             <div className="menu-wrapper">
-                <div className="menu-layer"></div>
+                
                 <nav className="sidebar-navigation">
                     <div className="sidebar-top">                   
-                    <div className="links-wrapper">
-                    <Link className="menu-link" to="/">
-                    Hem
-                    </Link>
-                    <Link className="menu-link" to="/portfolio">
-                    Portfölj
-                    </Link>
-                    <Link className="menu-link" to="/settings">
-                    Inställningar
-                    </Link>
+                        <div className="links-wrapper">
+                            <NavLink className="menu-link" activeClassName="is-active" to="/" exact={true}>
+                            Hem</NavLink>
+                            <NavLink className="menu-link" activeClassName="is-active" to="/portfolio">Portfölj</NavLink>
+                            <NavLink className="menu-link" activeClassName="is-active" to="/settings">Inställningar</NavLink>
+                        </div>
                     </div>
-                    </div>
+
                     <div className="sidebar-bottom" id="line">
-                    <Link className="logout-link" to="/startPage">
-                    Logga ut
-                    </Link>
+                        <NavLink className="logout-link" to="/startPage">Logga ut</NavLink>
                     </div>
                 </nav>
             </div>

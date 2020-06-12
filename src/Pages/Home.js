@@ -1,35 +1,46 @@
 import React from 'react';
 import Sidebar from '../Components/Sidebar';
-
+import CustomerCard from '../Components/CustomerCard';
+import CustomerPhotoAndName from '../Components/CustomerPhotoAndName';
+import Dialog from '../Components/Dialog';
+import IndustryPreferences from '../Components/IndustryPreferences';
+import MyPortfolio from '../Components/MyPortfolio';
 
 const Home = () => {
 
-    return (   
+    return (
         <div>
-        <Sidebar />
-        <div className="header">Hem</div>
+            <Sidebar />
 
-        <div className="homepage">
+            <div className="page">
+            <div className="header">Hem</div>
 
-        <div className="Dialog">
-        <p>Välkommen Magnus! Ditt innehav blev senast uppdaterad 2020-02-26. Ta gärna en titt!</p>
-        </div>
-        
+            <Dialog />
+            
+            <body>
+                <div class="block-left">
+                    <div id="block-header"><p>Min Profil</p>
+                    <button id="button">Redigera</button>
+                    </div>
 
-        <body>
-        <div class="block-left">
-        <div id="header">Min Profil
-        <button id="button">Redigera</button>
-        </div>
-        </div>
+                    <CustomerPhotoAndName />
+                    
+                    <IndustryPreferences />
+                    
+                    <CustomerCard />
 
-        <div class="block-right">
-        <div id="header">Mitt Innehav
-        <button id="button">Min Portfölj</button>
-        </div>
-        </div>             
-        </body>
+                    </div>
+                
+                <div class="block-right">
+                    <div id="block-header">Mitt Innehav
+                    <button id="button">Min Portfölj</button>
+                    </div>
 
+                    <MyPortfolio />
+
+
+                </div>             
+            </body>
         </div>
         </div>
     );

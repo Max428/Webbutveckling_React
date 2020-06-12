@@ -5,9 +5,11 @@ const Settings = () => {
     return (
         <div>
         <Sidebar />
+        <div className="page">
         <div className="header">Inställningar</div>
+
         </div>
-    
+        </div>
     );
 
 }
