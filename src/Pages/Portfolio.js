@@ -5,7 +5,12 @@ const Portfolio = () => {
     return (
         <div>
         <Sidebar />
-        <div className="header">Portfölj</div>
+        <div className="page">
+            <div className="header">Portfölj</div>
+            <div>
+            
+            </div>
+        </div>
         </div>
     );
 

@@ -7,25 +7,24 @@ body {
   align-items: center;
 }
 .header {
-  margin-top: 27px;;
+  margin-top: 15px;
   text-align: left;
   color: #656565;
   text-justify: newspaper;
-  margin-left: 230px;
   font-size: 22px;
 }
 
-//design for homepage
-.homepage {
-  margin-left: 230px;
+//design for pages
+.page {
+  left: 244px;
   color:#656565;
-
+  position: absolute;
 }
 
 .Dialog {
   top: 73px;
   left: 244px;
-  width: 1000px;
+  width: 950px;
   height: 60px;
   background: #FFD98D 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 15px #45414E14;
@@ -33,6 +32,7 @@ body {
   opacity: 1;
   margin-bottom: 20px;
   text-align: justify;
+  margin-left: 14px;
   p {
     padding-left: 10px;
     padding-top: 20px;
@@ -40,30 +40,118 @@ body {
 }
 
 .block-left {
-  left: 230px;
+ 
   width:552px;
   height:622px;
-  overflow:auto;
   float:left;
   top: 157px;
-  left: 244px;
+
   width: 434px;
   height: 622px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 15px #45414E14;
   border-radius: 4px;
-  margin-right: 10px;
+  margin-left: 14px;
+  margin-bottom: 10px;
   max-width: 100%;
   min-width: 30%;
+  text-align: left;
+  
+  #block-header {
+    border-bottom: 1px solid #EDEFF3;
+    padding: 15px;
+  
+    p {
+      font-size: 19px;
+      letter-spacing: 0px;
+      color: #3C4368;
+      opacity: 1;
+      float: left;
+    }
+  }
+
+  #customerPhotoAndName{
+    margin-top: 50px;
+    #photo {
+      float: left;
+    .round {
+    border-radius: 50%;
+    width: 111px;
+    height: 111px;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  }
+}
+  
+  #customer-name {
+    margin-left: 170px;
+    padding-top: 10px;
+    p {
+      color: #A1A8C3;
+      font-size: 12px;
+      }
+  }
+
+  .industries {
+    padding-left: 20px;
+    margin-top: 50px;
+    width: 100%;
+    td {
+      width: 400px;
+      margin-right: 10px;
+    }
+    tr {
+      height: 60px;
+      width: 60px;
+      margin-bottom: 40px;
+    }
+    form {
+      width: 60px;
+    }
+    
+  }
+  
+  .contact-information {
+    padding-left: 20px;
+    margin-top: 30px;
+    #contactsTitle {  
+      font-size: 14px;
+      color: #A1A8C3;
+      font-weight: normal;
+    }
+    p {
+      color: #3D4465;
+      font-weight: bold;
+    }
+  }
+
+  h2 {
+  letter-spacing: 0.29px;
+  color: #3D4465;
+  font-size: 20px;
+  opacity: 1;
+  }
+  h3 {
+  font-size: 16px;
+  letter-spacing: 0.23px;
+  color: #3D4465;
+  opacity: 1;
+  }
+  p {
+    font-size: 14px;
+    color: #A1A8C3;
+  }
 }
 
+
 .block-right {
-  width:552px;
-  height:622px;
   overflow:auto;
+  width:500px;
+  height:600px;
   top: 157px;
-  left: 702px;
-  width: 552px;
+  margin-left: 490px;
+  width: 460x;
   height: 622px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 15px #45414E14;
@@ -71,7 +159,19 @@ body {
   opacity: 1;
   max-width: 100%;
   min-width: 40%;
+  text-align: left;
+  font-size: 16px/19px;
+  letter-spacing: 0px;
+  color: #3C4368;
+  opacity: 1;
+
+  #block-header {
+    border-bottom: 1px solid #EDEFF3;
+    padding: 15px;
+  }
+
 }
+
 #button {
   width: 88px;
   height: 32px;
@@ -81,46 +181,9 @@ body {
   text-align: center;
   letter-spacing: 0px;
   color: #FFFFFF;
+  float: right;
   }
 
-
-
-
-
-//header
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 10;
-
-  .menu-trigger {
-    display: inline-flex;
-    flex-direction: column;
-    height: 48px;
-    width: 48px;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: transparent;
-    border: 0;
-    outline: 0;
-    position: relative;
-    padding: 10px;
-    cursor: pointer;
-    span {
-      display: inline-flex;
-      width: 30px;
-      height: 4px;
-      border-radius: 16px;
-      background-color: #000000;
-      transition: all ease 0.5s;
-    }
-  }
-}
 
 //for the sidebar with the menu
 .menu-wrapper {
@@ -174,7 +237,6 @@ body {
         background-color: #292929;
         color: #FDCC6B;
       }
-      
     }
   }
   .sidebar-bottom {
@@ -194,7 +256,7 @@ body {
   }
 }
 
-//design for the pages
+//design for the login page
 .startPage {
   text-align: center;
 
