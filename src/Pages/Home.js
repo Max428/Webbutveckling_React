@@ -10,16 +10,18 @@ const Home = () => {
 
     return (
         <div>
-            <Sidebar />
+            
 
             <div className="page">
+            <Sidebar />
             <div className="header">Hem</div>
 
             <Dialog />
             
             <body>
                 <div class="block-left">
-                    <div id="block-header"><p>Min Profil</p>
+                    <div id="block-header">
+                        <p>Min Profil</p>
                     <button id="button">Redigera</button>
                     </div>
 
