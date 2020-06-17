@@ -8,13 +8,36 @@ const CustomerCard = props => {
         
         <div className="contact-information">
         <p id="contactsTitle">Kontaktuppgifter</p>
+
         <form>
-        <p>Telefon:</p>
-        <p>Mail:</p>
-        <p>Address:</p>
-        <p>Postnummer:</p>
-        <p>Postort:</p>
+
+        <tr>
+        <td><p>Telefon:</p></td>
+        <td type="number" name="phonenumber">079 946 3654</td>
+        </tr>
+
+        <tr>
+        <td><p>Mail:</p></td>
+        <td type="text" name="email">magnus.pesson@hotmail.com</td> 
+        </tr>
+
+        <tr>
+        <td><p>Address:</p></td>
+        <td type="text" name="address">Lantmilsgatan 7</td>
+        </tr>
+        
+        <tr>
+        <td><p>Postnummer:</p></td>
+        <td type="number" name="postmunber">415 01</td>
+        </tr>
+        
+        <tr>
+        <td><p>Postort:</p></td>
+        <td type="text" name="city">Göteborg</td>
+        </tr>
+        
         </form>
+
         </div>
         </div>
     );
