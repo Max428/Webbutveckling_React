@@ -1,4 +1,5 @@
 body {
+  overflow: hidden;
   margin: 0;
   font-family:'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -7,7 +8,9 @@ body {
   align-items: center;
 }
 .header {
-  margin-top: 15px;
+  position: relative;
+  margin-top: 2%;
+  margin-left: 5%;
   text-align: left;
   color: #656565;
   text-justify: newspaper;
@@ -16,24 +19,27 @@ body {
 
 //design for pages
 .page {
-  left: 244px;
+  display: inline-block;
+ margin-left: 200px;
+  width: 100%;
+  min-width: 220px;
   color:#656565;
   position: absolute;
 }
 
 
 .Dialog {
-  top: 73px;
-  left: 244px;
-  width: 950px;
-  height: 60px;
+  position: sticky;
+  top: 10%;
+  width: 80%;
+  height: 70px;
   background: #FFD98D 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 15px #45414E14;
   border-radius: 4px;
   opacity: 1;
   margin-bottom: 20px;
   text-align: justify;
-  margin-left: 14px;
+  margin-left: 5%;
   p {
     padding-left: 10px;
     padding-top: 20px;
@@ -57,24 +63,29 @@ body {
 
 //for the block "Min Profil" on the page Hem
 .block-left {
-  width:552px;
-  height:622px;
-  float:left;
-  top: 157px;
-  width: 434px;
+  position: fixed;
+  display: inherit;
+  min-height: 700px;
+  width: 35%;
+  min-width: 30%;
   height: 622px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 15px #45414E14;
   border-radius: 4px;
-  margin-left: 14px;
+  margin-left: 5%;
   margin-bottom: 10px;
-  max-width: 100%;
-  min-width: 30%;
+  margin-right: 2%;
+  text-align: left;
+  
   #block-header {
     border-bottom: 1px solid #EDEFF3;
+    padding: 15px;
+    height: 33px;
+    
+  
     p {
-      text-align: left;
-      font-size: 16px/19px;
+      margin: 2.5px;
+      font-size: 19px;
       letter-spacing: 0px;
       color: #3C4368;
       opacity: 1;
@@ -82,7 +93,8 @@ body {
     }
   }
 
-  //for the component "CustomerPhoto"
+  #customerPhotoAndName{
+    margin-top: 2%;
     #photo {
       margin-right: 40px;
       float: left;
@@ -94,10 +106,10 @@ body {
     margin-left: 20px;
   }
 }
-
-//forthe customer's mane on the page Hem
-    #customer-name {
-    margin-left: 170px;
+  
+  #customer-name {
+    position: relative;
+    margin-left: 30%;
     padding-top: 10px;
     h2 {
       letter-spacing: 0.29px;
@@ -118,23 +130,21 @@ body {
     }
   
 
-
-.industries {
-    padding-left: 20px;
-    margin-top: 30px;
-    width: 100%;
-    p {
-      font-size: 14px;
-      color: #A1A8C3;
-    }
+  .industries {
+    padding-left: 5%;
+    margin-top:  7.5%;
+    width: 95%;
     td {
-      width: 400px;
-      margin-right: 10px;
+      height: 20%;
+      width: 10%;
+      padding: 5% 0%;
     }
     tr {
-      height: 60px;
-      width: 60px;
-      margin-bottom: 20px;
+      height: 20%;
+      width: 40%;
+    }
+    form {
+      width: 100%;
     }
   }
 
@@ -147,45 +157,112 @@ body {
       color: #A1A8C3;
       font-weight: normal;
     }
+    form{
+      width: 100%;
+    }
     p {
       color: #3D4465;
-      font-weight: bold;
-      opacity: 1;
-    }
-    td {
-      color: #3D4465;
-      font-size: 14px;
-      opacity: 1;
-      padding-left: 20px;
+      font-weight: normal;
+      width: 20%;
+      margin-top: 2%;
+      margin-right: 10%;
     }
   }
 }
 
 
 .block-right {
+  overflow-y: auto;
+  position: fixed;
+  margin-left: 43%;
   overflow:auto;
-  top: 157px;
-  margin-left: 490px;
-  width: 460x;
-  height: 622px;
+  display: inherit;
+  width: 42%;
+  min-height:700px;
+  margin-right: 15%;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 15px #45414E14;
   border-radius: 4px;
   opacity: 1;
-  max-width: 100%;
-  min-width: 40%;
+  text-align: left;
+  font-size: 16px/19px;
+  letter-spacing: 0px;
+  color: #3C4368;
+  opacity: 1;
+
   #block-header {
     border-bottom: 1px solid #EDEFF3;
+    padding: 15px;
+    height: 33px;
+    font-size: 18px;
+    
+    
+  
     p {
-      text-align: left;
-      font-size: 16px/19px;
+      margin: 2.5px;
+      font-size: 19px;
       letter-spacing: 0px;
       color: #3C4368;
       opacity: 1;
-      padding-left: 20px;
+      float: left;
     }
   }
+  .holdings-summary{
+    margin-left: 20px;
+    margin-top: 3%;
+
+  }
+  
+  #totalMoney{
+    display: inline-block;
+
+    #userMoney{
+      display: inherit;
+      font-size: xx-large;
+      font-weight: 500;
+      color: black;
+    }
+    p#lastUpdate {
+      display: inherit;
+      font-size: small;
+      font-weight: lighter;
+      color: #A1A8C3;
+      margin-left: 5px;
+    }
+  }
+  #portfolio-holdings{
+    width: 90%;
+    li{
+      width: 100%;
+      position:relative;
+      list-style-type: square;
+      padding: 1px;
+      margin-top: 5px;
+      margin-right: 5px;
+      border: 1px;
+      background-color: lightgreen;
+      border-radius: 5px;
+
+      
+    }
+    
+
+  }
 }
+
+#button {
+  width: 90px;
+  min-width: 49.6px;
+  height: 32px;
+  min-height: 26px;
+  background: #3C3C3B 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  float: right;
+  }
 
 
 //for the sidebar with the menu
@@ -204,7 +281,7 @@ body {
   position: relative;
   display: flex;
   height: 100%;
-  width: 220px;
+  width: 100%;
   background-color: #3C3C3B;
   box-shadow: 0px 0px 4px #292929;
   overflow-y: auto;
@@ -416,7 +493,6 @@ body {
   text-align: center;
 
 }
-
 
 
 
