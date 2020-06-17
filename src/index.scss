@@ -21,6 +21,7 @@ body {
   position: absolute;
 }
 
+
 .Dialog {
   top: 73px;
   left: 244px;
@@ -39,13 +40,27 @@ body {
   }
 }
 
+//button "Redigera" and "Min Portfölj" on the page Hem
+#button {
+  width: 88px;
+  height: 27px;
+  background: #3C3C3B 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  text-align: center;
+  color: #FFFFFF;
+  float: right;
+  text-decoration: none;
+  padding-top: 5px;
+  margin-right: 15px;
+  }
+
+//for the block "Min Profil" on the page Hem
 .block-left {
- 
   width:552px;
   height:622px;
   float:left;
   top: 157px;
-
   width: 434px;
   height: 622px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -55,24 +70,21 @@ body {
   margin-bottom: 10px;
   max-width: 100%;
   min-width: 30%;
-  text-align: left;
-  
   #block-header {
     border-bottom: 1px solid #EDEFF3;
-    padding: 15px;
-  
     p {
-      font-size: 19px;
+      text-align: left;
+      font-size: 16px/19px;
       letter-spacing: 0px;
       color: #3C4368;
       opacity: 1;
-      float: left;
+      padding-left: 20px;
     }
   }
 
-  #customerPhotoAndName{
-    margin-top: 50px;
+  //for the component "CustomerPhoto"
     #photo {
+      margin-right: 40px;
       float: left;
     .round {
     border-radius: 50%;
@@ -81,22 +93,40 @@ body {
     margin-top: 15px;
     margin-left: 20px;
   }
-  }
 }
-  
-  #customer-name {
+
+//forthe customer's mane on the page Hem
+    #customer-name {
     margin-left: 170px;
     padding-top: 10px;
-    p {
-      color: #A1A8C3;
-      font-size: 12px;
+    h2 {
+      letter-spacing: 0.29px;
+      color: #3D4465;
+      font-size: 20px;
+      opacity: 1;
       }
-  }
+      h3 {
+      font-size: 16px;
+      letter-spacing: 0.23px;
+      color: #3D4465;
+      opacity: 1;
+      }
+      p {
+        font-size: 14px;
+        color: #A1A8C3;
+      }
+    }
+  
 
-  .industries {
+
+.industries {
     padding-left: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 100%;
+    p {
+      font-size: 14px;
+      color: #A1A8C3;
+    }
     td {
       width: 400px;
       margin-right: 10px;
@@ -104,18 +134,15 @@ body {
     tr {
       height: 60px;
       width: 60px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
-    form {
-      width: 60px;
-    }
-    
   }
+
   
   .contact-information {
-    padding-left: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
     #contactsTitle {  
+      padding-left: 20px;
       font-size: 14px;
       color: #A1A8C3;
       font-weight: normal;
@@ -123,32 +150,20 @@ body {
     p {
       color: #3D4465;
       font-weight: bold;
+      opacity: 1;
     }
-  }
-
-  h2 {
-  letter-spacing: 0.29px;
-  color: #3D4465;
-  font-size: 20px;
-  opacity: 1;
-  }
-  h3 {
-  font-size: 16px;
-  letter-spacing: 0.23px;
-  color: #3D4465;
-  opacity: 1;
-  }
-  p {
-    font-size: 14px;
-    color: #A1A8C3;
+    td {
+      color: #3D4465;
+      font-size: 14px;
+      opacity: 1;
+      padding-left: 20px;
+    }
   }
 }
 
 
 .block-right {
   overflow:auto;
-  width:500px;
-  height:600px;
   top: 157px;
   margin-left: 490px;
   width: 460x;
@@ -159,30 +174,18 @@ body {
   opacity: 1;
   max-width: 100%;
   min-width: 40%;
-  text-align: left;
-  font-size: 16px/19px;
-  letter-spacing: 0px;
-  color: #3C4368;
-  opacity: 1;
-
   #block-header {
     border-bottom: 1px solid #EDEFF3;
-    padding: 15px;
+    p {
+      text-align: left;
+      font-size: 16px/19px;
+      letter-spacing: 0px;
+      color: #3C4368;
+      opacity: 1;
+      padding-left: 20px;
+    }
   }
-
 }
-
-#button {
-  width: 88px;
-  height: 32px;
-  background: #3C3C3B 0% 0% no-repeat padding-box;
-  border-radius: 4px;
-  opacity: 1;
-  text-align: center;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-  float: right;
-  }
 
 
 //for the sidebar with the menu
@@ -197,19 +200,27 @@ body {
   left: 0;
   overflow: hidden;
 }
-
 .sidebar-navigation {
   position: relative;
   display: flex;
   height: 100%;
   width: 220px;
   background-color: #3C3C3B;
-  padding-top: 104px;
   box-shadow: 0px 0px 4px #292929;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  .logo {
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 158px;
+    height: 66px;
+    background: url('Images/Image1.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: none;
+  }
+  
   &::-webkit-scrollbar {
     width: 0px;
   }
@@ -225,7 +236,7 @@ body {
     flex-direction: column;
     flex-basis: 100%;
     .menu-link {
-      text-decoration:none;
+      text-decoration: none;
       list-style: none;
       padding: 16px;
       display: flex;
@@ -233,30 +244,174 @@ body {
       font-weight: 200;
       background-color: #363636;
       width: 220px;
+      i {
+        margin-right: 10px;
+      }
       &:hover {
         background-color: #292929;
         color: #FDCC6B;
       }
     }
   }
+}
   .sidebar-bottom {
     margin: 0;
-    padding: 0;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
     align-items: center;
-      .logout-link {
-        color: #C9B791;
-        text-decoration: none;
-        &:hover {
-        color: #FDCC6B;
-      }     
+}
+.logout-link {
+  padding-top: 200px;
+  color: #C9B791;
+  text-decoration: none;
+  i {
+    margin-right: 10px;
+  }
+  &:hover {
+  color: #FDCC6B;
+}
+}
+
+
+//design for Settings page
+.settings-window {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 15px #45414E14;
+  border-radius: 4px;
+  opacity: 1;
+  width: 1000px;
+  min-width: 60%;
+  height: 840px;
+  margin-top: 15px;
+}
+
+#settings-header {
+  padding: 20px;
+  margin-top: 15px;
+  border-bottom: 1px solid #EDEFF3;
+  height: 40px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 15px #45414E14;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+
+
+//button "Spara" on the page Inställningar
+#settings-submit {
+  width: 114px;
+  height: 42px;
+  background: #FDCC6B 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  border: none;
+  margin-top: 20px;
+  float: right;
+  margin-right: 20px;
+  color: #FFFFFF;
+}
+
+//buttons-links on the page Inställningar
+#settings-link {
+  width: 120px;
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #A1A8C3;
+  opacity: 1;
+  margin-right: 30px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  text-align: center;
+  &:hover {
+    color: #FDCC6B;
+  }
+  &:active {
+    color: #FDCC6B;
+  }
+}
+
+.department {
+  margin-top: 15px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 15px #45414E14;
+  border-radius: 4px;
+  opacity: 1;
+  padding: 30px;
+  #photo {
+    margin-right: 40px;
+    float: left;
+  .round {
+    border-radius: 50%;
+    width: 111px;
+    height: 111px;
+    margin-top: 15px;
+    margin-left: 20px;
     }
   }
 }
 
-//design for the login page
+  #customer-name-for-settings {
+  p {
+    font-size: 11px;
+    letter-spacing: 0;
+    color: #A1A8C3;
+    opacity: 1;
+  }
+  input {
+    margin-right: 20px;
+    width: 210px;
+    height: 39px;
+    border: 1px solid #EBEDF2;
+    border-radius: 4px;
+    opacity: 1;
+    padding-left: 20px;
+    text-align: left;
+    color: #575962;
+    opacity: 0.6;
+    font-size: 14px;
+  }
+}
+
+#preferences-for-settings {
+  p {
+    text-align: left;
+    font-size: 13px;
+    color: #A1A8C3;
+    opacity: 1;
+  }
+  td {
+  font-size: 14px;
+  text-align: left;
+  letter-spacing: -0.01px;
+  color: #3D4465;
+  opacity: 1;
+}
+}
+
+//for the page Portfölj
+.portfoio-container {
+  width: 1010px;
+  height: 702px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 15px #45414E14;
+  border-radius: 4px;
+  width: 100%;
+  th {
+    font-size: 13px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #A1A8C3;
+    opacity: 1;
+    font-weight: normal;
+  }
+}
+
+
+//design for the Login page
 .startPage {
   text-align: center;
 

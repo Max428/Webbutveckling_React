@@ -1,0 +1,92 @@
+[
+    {
+        "company": "Företag 1",
+        "invested": 20.00,
+        "auctionType": "A",
+        "numberOfActions": 3000,
+        "actionNumber": "1-3000",
+        "ownershipInterest": 1.00,
+        "votingPower": 1.00
+    },
+    {
+        "company": "Företag 2",
+        "invested": 20.00,
+        "auctionType": "A",
+        "numberOfActions": 3000,
+        "actionNumber": "1-3000",
+        "ownershipInterest": 1.00,
+        "votingPower": 1.00
+    },
+    {
+        "company": "Företag 3",
+        "invested": 20.00,
+        "auctionType": "A",
+        "numberOfActions": 3000,
+        "actionNumber": "1-3000",
+        "ownershipInterest": 1.00,
+        "votingPower": 1.00
+    },
+    {
+        "company": "Företag 4",
+        "invested": 20.00,
+        "auctionType": "A",
+        "numberOfActions": 3000,
+        "actionNumber": "1-3000",
+        "ownershipInterest": 1.00,
+        "votingPower": 1.00
+    },
+    {
+        "company": "Företag 5",
+        "invested": 20.00,
+        "auctionType": "A",
+        "numberOfActions": 3000,
+        "actionNumber": "1-3000",
+        "ownershipInterest": 1.00,
+        "votingPower": 1.00
+    },
+    {
+        "company": "Företag 6",
+        "invested": 20.00,
+        "auctionType": "A",
+        "numberOfActions": 3000,
+        "actionNumber": "1-3000",
+        "ownershipInterest": 1.00,
+        "votingPower": 1.00
+    },
+    {
+        "company": "Företag 7",
+        "invested": 20.00,
+        "auctionType": "A",
+        "numberOfActions": 3000,
+        "actionNumber": "1-3000",
+        "ownershipInterest": 1.00,
+        "votingPower": 1.00
+    },
+    {
+        "company": "Företag 8",
+        "invested": 20.00,
+        "auctionType": "A",
+        "numberOfActions": 3000,
+        "actionNumber": "1-3000",
+        "ownershipInterest": 1.00,
+        "votingPower": 1.00
+    },
+    {
+        "company": "Företag 9",
+        "invested": 20.00,
+        "auctionType": "A",
+        "numberOfActions": 3000,
+        "actionNumber": "1-3000",
+        "ownershipInterest": 1.00,
+        "votingPower": 1.00
+    },
+    {
+        "company": "Företag 10",
+        "invested": 20.00,
+        "auctionType": "A",
+        "numberOfActions": 3000,
+        "actionNumber": "1-3000",
+        "ownershipInterest": 1.00,
+        "votingPower": 1.00
+    }
+]
