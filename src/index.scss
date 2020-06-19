@@ -95,7 +95,7 @@ body {
   }
 }
 
-//forthe customer's mane on the page Hem
+//for the customer's name on the page Hem
     #customer-name {
     margin-left: 170px;
     padding-top: 10px;
@@ -104,6 +104,7 @@ body {
       color: #3D4465;
       font-size: 20px;
       opacity: 1;
+      padding-right: 10px;
       }
       h3 {
       font-size: 16px;
@@ -185,7 +186,46 @@ body {
       padding-left: 20px;
     }
   }
+  .holdings-summary{
+    margin-left: 20px;
+    margin-top: 3%;
+
+  }
+  
+  #totalMoney{
+    display: inline-block;
+
+    #userMoney{
+      display: inherit;
+      font-size: xx-large;
+      font-weight: 500;
+      color: black;
+    }
+    p#lastUpdate {
+      display: inherit;
+      font-size: small;
+      font-weight: lighter;
+      color: #A1A8C3;
+      margin-left: 5px;
+    }
+  }
+  #portfolio-holdings{
+    width: 90%;
+    li{
+      width: 100%;
+      position:relative;
+      list-style-type: square;
+      padding: 1px;
+      margin-top: 5px;
+      margin-right: 5px;
+      border: 1px;
+      background-color: lightgreen;
+      border-radius: 5px; 
+    }
+
+  }
 }
+
 
 
 //for the sidebar with the menu
@@ -216,9 +256,9 @@ body {
     margin-left: 25px;
     width: 158px;
     height: 66px;
-    background: url('Images/Image1.png') 0% 0% no-repeat padding-box;
+    background: url('Images/Image1.png');
+    background-repeat: no-repeat;
     opacity: 1;
-    border: none;
   }
   
   &::-webkit-scrollbar {
