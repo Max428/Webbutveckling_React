@@ -20,22 +20,18 @@ const Home = () => {
 
     return (
         <div>
-            <Sidebar />
+            
 
             <div className="page">
-                <div className="header">Hem</div>
+            <Sidebar />
+            <div className="header">Hem</div>
 
                 <Dialog firstName/>
             
                 <div class="block-left">
-                    <div id="block-header"><p>Min Profil
-                    <NavLink to="/settings/myprofile" exact={true} id="button">Redigera
-                    <Switch>
-                    <Route path="/settings/myprofile">
-                    <Settings />
-                    </Route>
-                    </Switch>
-                    </NavLink></p>
+                    <div id="block-header">
+                        <p>Min Profil</p>
+                    <button id="button">Redigera</button>
                     </div>
 
                     <CustomerPhoto />
