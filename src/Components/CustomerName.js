@@ -2,7 +2,7 @@ import React from 'react';
 import CustomerPhoto from './CustomerPhoto';
 
 const user = {
-    firstName: 'Magnus',
+    firstName: 'Anara',
     lastName: 'Persson',
     personalNumber: 123456+'-'+1234
 }
