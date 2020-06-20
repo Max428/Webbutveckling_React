@@ -15,6 +15,7 @@ import {
   } from "react-router-dom";
 import CustomerPhoto from '../Components/CustomerPhoto';
 
+
 const Home = () => {
 
     return (
@@ -25,7 +26,7 @@ const Home = () => {
             <Sidebar />
             <div className="header">Hem</div>
 
-                <Dialog />
+                <Dialog firstName/>
             
                 <div class="block-left">
                     <div id="block-header">

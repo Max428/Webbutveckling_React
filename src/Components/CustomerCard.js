@@ -5,11 +5,10 @@ const CustomerCard = props => {
    
     return (
         <div>
-        
         <div className="contact-information">
         <p id="contactsTitle">Kontaktuppgifter</p>
 
-        <form>
+        <div>
 
         <tr>
         <td><p>Telefon:</p></td>
@@ -36,7 +35,7 @@ const CustomerCard = props => {
         <td type="text" name="city">Göteborg</td>
         </tr>
         
-        </form>
+        </div>
 
         </div>
         </div>
