@@ -32,15 +32,13 @@ const Home = () => {
                         <p>Min Profil</p>
                     <button id="button"><p>Redigera</p></button>
                     </div>
-
-                    <CustomerPhoto />
-
+                    <div className="left-container">
                     <CustomerName />
                     
                     <IndustryPreferences />
                     
                     <CustomerCard />
-
+                    </div>
                 </div>
                 
                 <div class="block-right">

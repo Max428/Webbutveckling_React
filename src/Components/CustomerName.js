@@ -1,11 +1,14 @@
 import React from 'react';
+import CustomerPhoto from './CustomerPhoto';
 
 const CustomerName = () => {
 
     
     return (
 
-        <div>
+        <div id="photo-and-name">
+           <CustomerPhoto />
+           <div id="name">
             <form id="customer-name">
             <tr>
             <td>
@@ -18,6 +21,7 @@ const CustomerName = () => {
             <p>Person Nr/Organisations Nr</p>
             <h3 type="number" name="resonnumber">780817-6331</h3>
             </form>
+            </div>
         </div>
     );
 
