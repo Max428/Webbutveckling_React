@@ -23,7 +23,7 @@ class CustomerName extends React.Component {
             <h2 type="text" name="firstname">{user.firstName}</h2>
             </td>
             <td>
-            <h2 type="text" name="lastname"></h2>
+            <h2 type="text" name="lastname">{user.lastName}</h2>
             </td>
             </tr>
             <p>Person Nr/Organisations Nr</p>
