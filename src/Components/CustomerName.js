@@ -8,7 +8,7 @@ const user = {
 }
 
 class CustomerName extends React.Component {
-
+  
     render(){
 
     
@@ -21,14 +21,17 @@ class CustomerName extends React.Component {
             <tr>
             <td>
             <h2 type="text" name="firstname">Magnus Persson</h2>
+
             </td>
             <td>
+
             <h2 type="text" name="lastname"></h2>
             </td>
             </tr>
             <p>Person Nr/Organisations Nr</p>
             <h3 type="number" name="resonnumber">{user.personalNumber}</h3>
             </form>
+
             </div>
         </div>
     );

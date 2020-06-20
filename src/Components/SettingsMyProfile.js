@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import CustomerPhoto from './CustomerPhoto';
 import CustomerName from './CustomerName';
 
@@ -6,24 +6,31 @@ import CustomerName from './CustomerName';
 //component for the page Settings to update customers informaion
 //is not fixed yet
 
-class SettingsMyProfile extends React.Component {
+class SettingsMyProfile extends Component {
 
-    constructor(props) {
+    constructor(props){
         super(props);
-
-        this.state = { value: ''};
         
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSave = this.handleSave.bind(this);
+    this.state = ({
+            firstName: null,
+            lastname: null,
+            personalNumber: null
+        });
+
+        this.handleChange= this.handleChange.bind(this);
+        this.handleSubmit= this.handleSubmit.bind(this);
+    }
+        
+
+    handleChange = (e) => {
+        this.setState({
+            [e.target.id] : e.target.value
+        })
     }
 
-    handleChange(event) {
-        this.setState({value: event.target.value});
-    }
-
-    handleSave(event) {
-        alert('Information is updated: ' + this.state.value);
-        event.preventDefault();
+    handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(this.setState.value)
     }
 
     render() {
@@ -35,22 +42,23 @@ class SettingsMyProfile extends React.Component {
                 <div id="customer-name-for-settings">
 
                 
-                <form onSubmit={this.handleSave} onChange={this.handleChange}>
+                <form onSubmit={this.handleSubmit} >
                 
                 <tr>
                 <td>
-                <p>Förnamn</p>
-                <input type="text" name="firstname" />
+                <label htmlFor="name"><p>Förnamn</p></label>
+                
+                <input type="text" id="firstname" onChange={this.handleChange}/>
                 
                 </td>
                 <td>
-                <p>Efternamn</p> 
-                <input type="text" name="lastname"  />
+                <label htmlFor="name"><p>Efternamn</p></label> 
+                <input type="text" id="lastname" onChange={this.handleChange} />
                 </td>
                 </tr>
 
-                <p>Personnummer</p>
-                <input type="number" name="resonnumber" />
+                <label htmlFor="name"><p>Personnummer</p></label>
+                <input type="number" id="personnumber" onChange={this.handleChange} />
                 
 
                 
@@ -73,7 +81,7 @@ class SettingsMyProfile extends React.Component {
                 <input type="text" name="email" />
                 
 
-                <button type="submit" value="Save">Spara</button>
+                <button onClick={this.onSubmit}>Spara</button>
 
                 </form>
 
