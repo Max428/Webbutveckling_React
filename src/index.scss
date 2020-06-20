@@ -168,7 +168,7 @@ body {
       margin-right: 10%;
     }
   }
-}
+}}
 
 
 .block-right {
@@ -280,8 +280,6 @@ body {
 .sidebar-navigation {
   position: relative;
   display: flex;
-  height: 100%;
-  width: 100%;
   background-color: #3C3C3B;
   box-shadow: 0px 0px 4px #292929;
   overflow-y: auto;
@@ -311,7 +309,6 @@ body {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
     .menu-link {
       text-decoration: none;
       list-style: none;
@@ -493,8 +490,3 @@ body {
   text-align: center;
 
 }
-
-
-
-
-

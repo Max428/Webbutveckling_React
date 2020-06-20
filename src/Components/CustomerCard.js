@@ -18,7 +18,7 @@ const CustomerCard = props => {
 
         <tr>
         <td><p>Mail:</p></td>
-        <td type="text" name="email">magnus.pesson@hotmail.com</td> 
+        <td type="text" name="email">magnus.persson@hotmail.com</td> 
         </tr>
 
         <tr>
