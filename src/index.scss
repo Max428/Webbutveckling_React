@@ -197,16 +197,14 @@ body {
   letter-spacing: 0px;
   color: #3C4368;
 
-  #block-header {
-    display: flex;
-    justify-content: space-between;
+  #block-header { //Header section in .block-right
+
+    margin-bottom: 10px;
     border-bottom: 2px solid #EDEFF3;
     padding: 15px;
     height: 50px;
-    font-size: 18px;
-    
-    
-  
+    display: flex;
+    justify-content: space-between;
     p {
       margin: 2.5px;
       font-size: 19px;
@@ -216,27 +214,29 @@ body {
       float: left;
     }
   }
-  .holdings-summary{
-    margin-left: 20px;
+
+  .holdings-summary{ //Summary of holdings
+    margin-left: 40px;
     margin-top: 3%;
 
   }
   
   #totalMoney{
     display: inline-block;
-
+    
     #userMoney{
       display: inherit;
-      font-size: xx-large;
+      font-size: xxx-large;
       font-weight: 500;
       color: black;
+
     }
     p#lastUpdate {
       display: inherit;
       font-size: small;
       font-weight: lighter;
       color: #A1A8C3;
-      margin-left: 5px;
+      margin: 15px;
     }
   }
   #portfolio-holdings{
