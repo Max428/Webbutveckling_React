@@ -1,7 +1,15 @@
 import React from 'react';
 import CustomerPhoto from './CustomerPhoto';
 
-const CustomerName = () => {
+const user = {
+    firstName: 'Magnus',
+    lastName: 'Persson',
+    personalNumber: 123456+'-'+1234
+}
+
+class CustomerName extends React.Component {
+
+    render(){
 
     
     return (
@@ -19,11 +27,13 @@ const CustomerName = () => {
             </td>
             </tr>
             <p>Person Nr/Organisations Nr</p>
-            <h3 type="number" name="resonnumber">780817-6331</h3>
+            <h3 type="number" name="resonnumber">{user.personalNumber}</h3>
             </form>
             </div>
         </div>
     );
-
+}
 }
 export default CustomerName;
+
+
