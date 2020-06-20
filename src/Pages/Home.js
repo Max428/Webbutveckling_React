@@ -32,28 +32,28 @@ const Home = () => {
                 <div class="block-left">
                     <div id="block-header">
                         <p>Min Profil</p>
-                    <button id="button">Redigera</button>
+                    <button id="button"><p>Redigera</p></button>
                     </div>
-
-                    <CustomerPhoto />
-
+                    <div className="left-container">
                     <CustomerName />
                     
                     <IndustryPreferences />
                     
                     <CustomerCard />
-
+                    </div>
                 </div>
                 
                 <div class="block-right">
-                    <div id="block-header"><p>Mitt Innehav
-                    <NavLink to="/portfolio" id="button">Min Portfölj
+                    <div id="block-header">
+                        <p>Mitt Innehav</p>
+                    <NavLink to="/portfolio" id="button">
+                        <p>Min Portfölj</p>
                     <Switch>
                     <Route path="/portfolio">
                     <Portfolio />
                     </Route>
                     </Switch>
-                    </NavLink></p>
+                    </NavLink>
                     </div>
 
                     <MyPortfolio />

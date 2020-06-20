@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import imgLogo from '../Images/Image1.png';
 //icons are importend from fontawesome.com site
 
 const Sidebar = props => {
@@ -10,8 +11,10 @@ const Sidebar = props => {
             <div className="menu-wrapper">
 
                 <nav className="sidebar-navigation">
+                    <div id="logo">
+                        <img src={imgLogo}></img>
+                    </div>
 
-                <div className="logo" />
 
                     <div className="sidebar-top">
                                     
