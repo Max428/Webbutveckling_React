@@ -1,8 +1,8 @@
 import React from 'react';
 
-const CustomerCard = props => {
+const CustomerCard = (props) => {
 
-   
+
     return (
         <div>
         <div className="contact-information">
