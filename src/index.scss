@@ -106,16 +106,16 @@ body {
     margin-left: 20px;
   }
 }
-  
-  #customer-name {
-    position: relative;
-    margin-left: 30%;
+
+    #customer-name {
+    margin-left: 170px;
     padding-top: 10px;
     h2 {
       letter-spacing: 0.29px;
       color: #3D4465;
       font-size: 20px;
       opacity: 1;
+      padding-right: 10px;
       }
       h3 {
       font-size: 16px;
@@ -230,6 +230,7 @@ body {
       margin-left: 5px;
     }
   }
+
   #portfolio-holdings{
     width: 90%;
     li{
@@ -241,11 +242,9 @@ body {
       margin-right: 5px;
       border: 1px;
       background-color: lightgreen;
-      border-radius: 5px;
-
-      
+      border-radius: 5px; 
     }
-    
+
 
   }
 }
@@ -263,6 +262,7 @@ body {
   color: #FFFFFF;
   float: right;
   }
+
 
 
 //for the sidebar with the menu
@@ -293,9 +293,9 @@ body {
     margin-left: 25px;
     width: 158px;
     height: 66px;
-    background: url('Images/Image1.png') 0% 0% no-repeat padding-box;
+    background: url('Images/Image1.png');
+    background-repeat: no-repeat;
     opacity: 1;
-    border: none;
   }
   
   &::-webkit-scrollbar {

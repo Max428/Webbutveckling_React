@@ -11,7 +11,7 @@ const Sidebar = props => {
 
                 <nav className="sidebar-navigation">
 
-                <img className="logo"/>
+                <div className="logo" />
 
                     <div className="sidebar-top">
                                     
