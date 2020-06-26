@@ -1,6 +1,8 @@
+/*
 import React from "react";
 
-const PortfolioTable = ({companyName, invested, auctionType, numberOfActions, actionNumber, ownershipInterest, votingPower}) => {
+
+const PortfolioTable = ({companyName, invested, actionType, numberOfActions, actionNumber, ownershipInterest, votingPower, download}) => {
 
     return (
 
@@ -8,19 +10,23 @@ const PortfolioTable = ({companyName, invested, auctionType, numberOfActions, ac
         
             <td>{companyName}</td>
             
-            <td>{invested}</td>
+            <td>{invested} SEK</td>
             
-            <td>{auctionType}</td>
+            <td>{actionType}</td>
             
-            <td>{numberOfActions}</td>
+            <td>{numberOfActions} st</td>
 
             <td>{actionNumber}</td>
 
-            <td>{ownershipInterest}</td>
+            <td>{ownershipInterest} %</td>
 
-            <td>{votingPower}</td>
+            <td>{votingPower} %</td>
+
+            <td>{download}<i class="fas fa-download"></i></td>
             
         </tr>
      );
     };
     export default PortfolioTable;
+
+    */
