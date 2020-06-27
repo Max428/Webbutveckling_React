@@ -4,43 +4,43 @@
         "invested": 20000,
         "actionType": "A",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
-        "ownershipInterest": 1.00,
-        "votingPower": 1.00
+        "actionNumber": 13000,
+        "ownershipInterest": 1.01,
+        "votingPower": 11.00
     },
     {
         "companyName": "Företag 2",
         "invested": 20000,
         "actionType": "B",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 10003000,
         "ownershipInterest": 1.00,
-        "votingPower": 1.00
+        "votingPower": 23.92
     },
     {
         "companyName": "Företag 3",
         "invested": 20000,
         "actionType": "C",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 462389,
         "ownershipInterest": 1.00,
-        "votingPower": 1.00
+        "votingPower": 22.83
     },
     {
         "companyName": "Företag 4",
         "invested": 20000,
         "actionType": "A",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 8692245,
         "ownershipInterest": 1.00,
-        "votingPower": 1.00
+        "votingPower": 12.22
     },
     {
         "companyName": "Företag 5",
         "invested": 20000,
         "actionType": "B",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 50466803,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -49,7 +49,7 @@
         "invested": 20000,
         "actionType": "C",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 24564543,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -58,7 +58,7 @@
         "invested": 20000,
         "actionType": "A",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 5677743,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -67,7 +67,7 @@
         "invested": 20000,
         "actionType": "B",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 11119872,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -76,7 +76,7 @@
         "invested": 20000,
         "actionType": "C",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 784894,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -85,7 +85,7 @@
         "invested": 20000,
         "actionType": "A",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 16549980,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -94,7 +94,7 @@
         "invested": 20000,
         "actionType": "B",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 12341234,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -103,7 +103,7 @@
         "invested": 20000,
         "actionType": "C",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 298746,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -112,7 +112,7 @@
         "invested": 20000,
         "actionType": "A",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 48333454,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -121,7 +121,7 @@
         "invested": 20000,
         "actionType": "B",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 10002000,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -130,7 +130,7 @@
         "invested": 20000,
         "actionType": "C",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 20002000,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -139,7 +139,7 @@
         "invested": 20000,
         "actionType": "C",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 10005555,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -148,7 +148,7 @@
         "invested": 20000,
         "actionType": "C",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 55557777,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -157,7 +157,7 @@
         "invested": 20000,
         "actionType": "C",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 44441111,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -166,7 +166,7 @@
         "invested": 20000,
         "actionType": "C",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 12304567,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -175,7 +175,7 @@
         "invested": 20000,
         "actionType": "C",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 10999008,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -184,7 +184,7 @@
         "invested": 20000,
         "actionType": "C",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 6789643,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     },
@@ -193,7 +193,7 @@
         "invested": 20000,
         "actionType": "C",
         "numberOfActions": 3000,
-        "actionNumber": "1-3000",
+        "actionNumber": 56890047,
         "ownershipInterest": 1.00,
         "votingPower": 1.00
     }

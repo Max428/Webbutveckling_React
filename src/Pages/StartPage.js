@@ -2,8 +2,8 @@ import React from 'react';
 
 const StartPage = () => {
     return (
-        <div>
-        <div className="startPage">StartPage</div>
+        <div className="startPage">
+            <header>StartPage</header>
         </div>
     );
 }

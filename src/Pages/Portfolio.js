@@ -1,29 +1,68 @@
 import React, { Component } from 'react';
 import Sidebar from '../Components/Sidebar';
+import {Tooltip} from '@material-ui/core';
 import data from '../Data/Company.json';
-import BootstrapTable from 'react-bootstrap-table-next';
+import BootStrapTable, {TableHeaderColumn} from 'react-bootstrap-table-next';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 require("bootstrap/scss/bootstrap.scss");
 
+
+function rankFormatter() { 
+    return (
+            <Tooltip title="Ladda ner aktiebrevet"><i style={{ textAlign: "center", cursor: "pointer", lineHeight: "normal" }}
+            className="fas fa-download"></i></Tooltip>
+            );
+        }
+
+function priceFormatter(cell) {
+    return (cell + " SEK");
+    }
+    
+function amountFormatter(cell) {
+    return (cell + " st");
+}
+
+function percentage(cell) {
+    return (cell + " %");
+}
+
+function triades(cell) {
+    var x=parseInt(cell,10).toString();
+    var r=/(\d+)(\d{4})/;
+    while(r.test(x)){
+      x=x.replace(r,'$1-$2');
+    };
+    return x.split('');
+  }
+
 class Portfolio extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = { 
-            data: []
+            data: [],
+            date: new Date().toLocaleString(),
+            
         };
     }
 
 render () {
-    
+
     const columns = [
-        {dataField: "companyName", text: "Företag"},
-        {dataField: "invested", text: "Innehav"},
-        {dataField: "actionType", text: "Aktietyp"},
-        {dataField: "numberOfActions", text: "Antal Aktier"},
-        {dataField: "actionNumber", text: "Aktienummer"},
-        {dataField: "ownershipInterest", text: "Ågarandel, %"},
-        {dataField: "votingPower", text: "Röstvärde, %"}
-    ];
+        {dataField: "companyName", text: "Företag", type: "string"},
+        {dataField: "invested", text: "Innehav", type: "number", formatter: priceFormatter},
+        {dataField: "actionType", text: "Aktietyp", type: "string"},
+        {dataField: "numberOfActions", text: "Antal Aktier", type: "number", formatter: amountFormatter},
+        {dataField: "actionNumber", text: "Aktienummer", type: "number", formatter: triades},
+        {dataField: "ownershipInterest", text: "Ågarandel", type: "number", formatter: percentage},
+        {dataField: "votingPower", text: "Röstvärde", type: "number", formatter: percentage},
+        {dataField: "download", 
+        text: " ",
+        sort: false,
+        formatter: rankFormatter,
+        headerAttrs: { width: 50},
+        attrs: { width: 50, className: "DowloadRow" } 
+      }
+    ]
 
     const options = {
         paginationSize: 7,
@@ -39,13 +78,13 @@ render () {
         lastPageTitle: 'Last page',
         
         sizePerPageList: [{
-            text: 'visa 10', value: 10
+            text: 'visa 10', value: 5
         }, {
             text: 'visa 20', value: 20
         }, {
             text: 'visa alla sidor', value: data.length
         }]
-    };  
+    };
 
 return (
         <div>
@@ -53,17 +92,19 @@ return (
 
         <div className="page">
 
-            <div className="header">Portfölj</div>
+            <div className="header"><td>Portfölj</td><td><p>Senast updaterat {this.state.date}</p></td></div>
 
                 <div className="portfolio-window">
 
                 <div className="table">
-                <BootstrapTable 
+                <BootStrapTable 
                 keyField="companyName"
                 data={data}
                 columns={columns}
-                pagination={paginationFactory(options)} className="pagination"
-                />
+                pagination={paginationFactory(options)} className="pagination">
+
+                <TableHeaderColumn dataField='invested' dataFormat={priceFormatter}>Price</TableHeaderColumn>
+                </BootStrapTable>           
                 </div>
                 </div>
             </div>        
@@ -72,101 +113,3 @@ return (
     }
 }
 export default Portfolio;
-
-
-/*
-import React, { Component } from 'react';
-import Sidebar from '../Components/Sidebar';
-import data from '../Data/Company.json';
-import PortfolioTable from '../Components/PortfolioTable';
-import BootstrapTable from 'react-bootstrap-table-next';
-import paginationFactory from 'react-bootstrap-table2-paginator';
-//import Pagination from "react-js-pagination";
-
-class Portfolio extends Component {
-
-    constructor(props) {
-        super(props)
-        this.state = { 
-            data: [],
-            activePage: 0,
-            pageNumber: 1,
-        };
-    }
-
-    componentDidMount() {
-        const results = data.slice(0, 10);
-        this.setState({
-            data: results,
-        });
-    }
-
-    handlePageChange(pageNumber) {
-        console.log(`active page is ${pageNumber}`);
-        this.setState({activePage: pageNumber});
-    }
-
-    nextPage = (pageNumber, prevPage, nextPage) => {
-        this.setState({data: [...data.results], currentPage: pageNumber, prevPage, nextPage})
-    }
-    
-render () {
-
-    return (
-        <div>
-        <Sidebar />
-
-        <div className="page">
-
-            <div className="header">Portfölj</div>
-
-            <div className="portfolio-window">
-
-            <table>
-            
-                <thead>
-                <th>Företag</th>
-                <th>Innehav</th>
-                <th>Aktietyp</th>
-                <th>Antal Aktier</th>
-                <th>Aktienummer</th>
-                <th>Ågarandel</th>
-                <th>Röstvärde</th>
-                <th> </th>
-                </thead>
-                
-                <tbody>
-                {this.state.data.map((company) => {
-                    return (
-                        <PortfolioTable 
-                        companyName={company.companyName}
-                        invested={company.invested}
-                        actionType={company.actionType}
-                        numberOfActions={company.numberOfActions}
-                        actionNumber={company.actionNumber}
-                        ownershipInterest={company.ownershipInterest}
-                        votingPower={company.votingPower}
-                        download={company.download}
-                        />   
-                    )
-                })}
-                </tbody>
-            </table>
-
-            <Pagination
-            itemClass="page-item"
-            activePage={1}
-            itemsCountPerPage={10}
-            totalItemsCount={data.length}
-            pageRangeDisplayed={5}
-            onChange={this.handlePageChange.bind(this)}/>
-            
-            </div>
-        </div>
-        </div>
-    );
-}
-}
-export default Portfolio;
-
-*/
