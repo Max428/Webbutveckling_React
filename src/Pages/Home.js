@@ -32,7 +32,14 @@ const Home = () => {
                 <div class="block-left">
                     <div id="block-header">
                         <p>Min Profil</p>
-                    <button id="button"><p>Redigera</p></button>
+                    <NavLink to="/settings/myprofile" id="button">
+                        <p>Redigera</p>
+                    <Switch>
+                    <Route path="/settings/myprofile">
+                    <Settings />
+                    </Route>
+                    </Switch>
+                    </NavLink>
                     </div>
                     <div className="left-container">
                     <CustomerName />
