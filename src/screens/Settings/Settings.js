@@ -13,7 +13,7 @@ const Settings = ({ userData, setUserData }) => {
 
     return (
         <div className='settingsContainer'>
-            <ScreenHeader label='Setting' />
+            <ScreenHeader label='Inställningar' />
             <div className='settingsTabs'>
                 <SettingsTabs setCurrentTab={setCurrentTab} currentTab={currentTab} />
                 {(() => {

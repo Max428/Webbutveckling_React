@@ -25,7 +25,7 @@ const Pagination = ({ currentPage, setCurrentPage, pages, setNewPageLimit, curre
                     <option value="15">15</option>
                     <option value="20">20</option>
                 </select>
-                <div>Visar {currentPage * currentPageLimit - (currentPageLimit - 1)} - {currentPage * currentPageLimit} of {pages * currentPageLimit}</div>
+                <div>Visar {currentPage * currentPageLimit - (currentPageLimit - 1)} - {currentPage * currentPageLimit} av {pages * currentPageLimit}</div>
             </div>
         </div>
     );
