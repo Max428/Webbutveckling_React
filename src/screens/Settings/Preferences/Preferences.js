@@ -17,7 +17,7 @@ const Preferences = ({ userData, setUserData }) => {
 
     return (
         <div>
-            {options.map((item, i) => (
+            {options && options.map((item, i) => (
                 <div key={i}>
                     <span>{item.label}</span>
                     <input type='checkbox' checked={item.value} onChange={() => handleChange(item)} />

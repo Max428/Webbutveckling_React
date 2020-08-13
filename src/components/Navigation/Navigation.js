@@ -13,15 +13,15 @@ const Navigation = ({ currentLocation }) => {
             <div className='navigation-links'>
                 <Link to='/' className={currentLocation === '/' ? 'link-selected' : 'link-item'}>
                     <div className="fas fa-home"></div>
-                            Home
+                            Hem
                 </Link>
                 <Link to='/portfolio' className={currentLocation === '/portfolio' ? 'link-selected' : 'link-item'}>
                     <div className="fas fa-briefcase"></div>
-                            Portfolio
+                            Min Portfölj
                 </Link>
                 <Link to='/settings' className={currentLocation === '/settings' ? 'link-selected' : 'link-item'}>
                     <div className="fas fa-cog"></div>
-                            Settings
+                            Inställningar
                 </Link>
             </div>
             <div className='loggout'>
