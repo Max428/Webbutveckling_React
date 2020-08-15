@@ -27,12 +27,12 @@ const Home = ({ userData }) => {
                 <div className='block'>
                     <RouteWithLabel label='Min Profil' route='/settings' name='Redigera' />
                     <AvatarWithData userData={userData} />
-                    {userData.industryOptions && <div className='block-label'>
-                        Föredragna Industrier
-                        {userData.industryOptions.map((item, i) => item.value === true && (
+                    <div className='block-label'>Föredragna Industrier</div>
+                    <div className='options'>
+                    {userData.industryOptions.map((item, i) => item.value === true && (
                             <div key={i}>{item.label}</div>
                         ))}
-                    </div>}
+                    </div>
                     {/* todo another block with data */}
                     <div className='block-label'>
                         Kontaktuppgifter

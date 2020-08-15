@@ -12,29 +12,37 @@ export const intitialUserData = {
     img: 'https://motsandco.com/wp-content/uploads/avatar-2-300x300.png',
     industryOptions: [
         {
-            label: 'Företag 1',
+            label: 'Bygg',
             value: false,
         },
         {
-            label: 'Företag 2',
+            label: 'Medicin',
             value: false,
         },
         {
-            label: 'Företag 3',
+            label: 'IT',
             value: false,
         },
         {
-            label: 'Företag 4',
+            label: 'Finans',
             value: false,
         },
         {
-            label: 'Företag 5',
+            label: 'Textil',
             value: false,
         },
         {
-            label: 'Företag 6',
+            label: 'Cosmetology',
             value: false,
         },
+        {
+            label: 'Vegan livstil',
+            value: false,
+        },
+        {
+            label: 'Industri x',
+            value: false,
+        }
     ],
 };
 
@@ -49,4 +57,3 @@ export const initialValues = (() => {
         return intitialUserData;
     }
 })();
-
