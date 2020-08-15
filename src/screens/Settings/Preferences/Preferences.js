@@ -17,12 +17,23 @@ const Preferences = ({ userData, setUserData }) => {
 
     return (
         <div>
+
+            <div className='text'>Mina prefererade industrier att investera inom</div>
+
+            <div className='options'>
             {options && options.map((item, i) => (
                 <div key={i}>
-                    <span>{item.label}</span>
                     <input type='checkbox' checked={item.value} onChange={() => handleChange(item)} />
+                    <span>{item.label}</span>
                 </div>
             ))}
+            </div>
+
+            <div className='tips'>Tips! Ifall du väljer att integrerar din bank så kan vi anpassa dina investeringar utefter din ekonomi och preferenser.</div>
+
+            <div className='link'>Integrera min bank</div>
+            <p>(detta kommer att skicka dig vidare etc....)</p>
+
         </div>
     );
 };
